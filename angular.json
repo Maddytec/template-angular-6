@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "location-app": {
+    "template-Angular-6-app": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/location-app",
+            "outputPath": "dist/template-Angular-6-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "location-app:build"
+            "browserTarget": "template-Angular-6-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "location-app:build:production"
+              "browserTarget": "template-Angular-6-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "location-app:build"
+            "browserTarget": "template-Angular-6-app:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "location-app-e2e": {
+    "template-Angular-6-app-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "location-app:serve"
+            "devServerTarget": "template-Angular-6-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "location-app:serve:production"
+              "devServerTarget": "template-Angular-6-app:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "location-app"
+  "defaultProject": "template-Angular-6-app"
 }
